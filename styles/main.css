@@ -1,0 +1,154 @@
+.main {
+    margin: 0;
+    padding: 200px 30px 100px 30px;
+    width: 100%;
+    min-height: 110vh;
+    background: linear-gradient(138deg, rgba(255, 255, 255, 1) 0%, rgba(240, 240, 240, 1) 100%);
+}
+
+.contain-wrap {
+    align-items: end;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 1075px) {
+
+    .contain-wrap{
+        left: 20px;
+        flex-direction: column;
+        align-items: start;
+    }
+
+
+
+    .hero-left{
+        margin: 0 0 50px 30px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .contain-wrap{
+        align-items: center;
+    }
+
+    .hero-left{
+        max-width: 580px;
+    }
+
+    .content h1{
+        font-size: 35px;
+        margin: 25px 0;
+
+    }
+
+    .content p {
+        font-size: 18px;
+        line-height: 150%;
+        margin-bottom: 25px;
+    }
+
+}
+
+.hero-left {
+    max-width: 580px;
+    box-shadow: 0px 14px 64px -4px rgb(24 39 75 / 12%);
+    padding: 50px;
+    position: relative;
+}
+
+.hero-left:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border: 4px solid #e6007e;
+    position: absolute;
+    top: -40px;
+    left: -40px;
+}
+
+.hero-right {
+    left: 20px;
+    max-width: 400px;
+    padding: 30px;
+    background: #F8F8F8;
+    display: inline-block;
+}
+
+h1 {
+    font-size: 75px;
+    line-height: 105%;
+    margin: 50px 0;
+}
+
+.content > p {
+    color: #e6007e;
+    text-transform: uppercase;
+}
+
+.wrap-of-hero-right{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.wrap-of-hero-right  div {
+    padding: 10px;
+    background: gold;
+    border: 3px dashed green;
+}
+
+.logo-of-hero {
+    font-size: 2rem;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 10px;
+}
+
+.hero-right p {
+    display: block;
+    margin: 0 0 40px 0;
+    color: slategray;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'titilliumlight', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+.slider {
+    display: inline-block;
+    height: 3px;
+    width: 32%;
+    background: #d3d3d37c;
+    transition: all .4s ease-in;
+}
+
+.active{
+    background: #e6007e;
+}
+
+.hero-right .wrap-of-slider {
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+}
+
+.angles {
+    font-size: 35px;
+    color: #e6007e;
+}
+
+.fa-angle-left{
+    cursor: pointer;
+}
+
+.fa-angle-right{
+    cursor: pointer;
+}
+
+@media (min-width: 1140px) {
+    .contain-wrap{
+        /*justify-content: space-between;*/
+    }
+}

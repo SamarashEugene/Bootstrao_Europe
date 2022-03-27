@@ -1,0 +1,140 @@
+
+header {
+    position: relative;
+}
+
+header > div {
+    height: 100%;
+}
+
+.header-logo {
+    height: 50px;
+    width: 80px;
+    font-size: 2.5rem;
+    top: 20px;
+    position: absolute;
+    left: 30px;
+}
+
+.header-logo a {
+    color: #000000;
+}
+
+.page-nav {
+    display: block;
+    position: fixed;
+    height: 60px;
+    right: 30px;
+
+    text-align: center;
+    background: #ffffff;
+}
+
+.page-nav .contact-link {
+    font-size: 16px;
+    padding: 0;
+    text-transform: uppercase;
+    color: #e6007e;
+    line-height: 100%;
+    margin: 0 20px;
+}
+
+.row > .page-nav {
+    width: auto;
+    padding: 0;
+}
+
+.contact-link {
+    display: inline;
+    transform: translateY(-5px);
+}
+
+
+.menu-btn {
+    width: 60px;
+    height: 60px;
+    padding: 19px 0;
+    background: #e6007e;
+    margin: auto;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.burger-menu {
+    height: 3px;
+    width: 28px;
+    background: #ffffff;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: relative;
+    top: 3px;
+    animation-duration: 3s;
+}
+
+.burger-menu-2 {
+    display: block;
+    height: 3px;
+    width: 28px;
+    background: #fff;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    animation-duration: 3s;
+}
+
+.burger-menu-3 {
+    display: block;
+    height: 3px;
+    width: 28px;
+    background: #fff;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -10px;
+    position: absolute;
+}
+
+.burger-menu-4 {
+    display: block;
+    height: 3px;
+    width: 28px;
+    background: #fff;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 10px;
+    position: absolute;
+}
+
+.nav-menu {
+    display: none;
+    right: 30px;
+    position: fixed;
+    text-align: right;
+    box-shadow: 0px 8px 22px -6px rgb(24 39 75 / 12%), 0px 14px 64px -4px rgb(24 39 75 / 12%);
+    background: #ffffff;
+}
+
+.page-nav > .nav-menu li {
+    border-bottom: 1px solid #f8f8f8;
+
+}
+
+.page-nav > .nav-menu li > a {
+    color: #000;
+    text-decoration: none;
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+    padding: 20px 30px 20px 60px;
+    display: block;
+    text-align: right;
+    font-size: 1rem;
+}
+
+.page-nav > .nav-menu li > a:hover {
+    background-color: rgb(252, 252, 252);;
+}

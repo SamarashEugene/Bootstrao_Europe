@@ -1,0 +1,302 @@
+.portfolio {
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 30px 0;
+    width: 90%;
+}
+
+.portfolio h2 {
+    font-size: 54px;
+}
+
+.portfolio:first-child {
+    margin: 50px;
+}
+
+.portfolio-info {
+    width: 68%;
+}
+
+.news {
+    width: 30%;
+    padding: 30px;
+    box-shadow: 0px 8px 22px -6px rgb(24 39 75 / 12%), 0px 14px 64px -4px rgb(24 39 75 / 12%);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.portfolio-info .text {
+    color: slategray;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'titilliumlight', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    margin-bottom: 50px;
+}
+
+.portfolio-box {
+    font-size: 1.2em;
+    padding: 50px;
+    border: 3px solid #e6007e;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.portfolio-box p {
+    margin-bottom: 30px;
+}
+
+.block-visit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.visit {
+    margin-bottom: 50px;
+}
+
+.visit h3 {
+    font-size: 2.5rem;
+}
+
+.visit .text {
+    margin-bottom: 15px;
+}
+
+.visit div .c-pink {
+    text-decoration: underline;
+}
+
+.visit div .c-pink:hover {
+    color: #e6007e;
+}
+
+.text-block {
+    margin-right: 30px;
+}
+
+.visit-link {
+    text-transform: uppercase;
+    font-size: 2em;
+    padding: 15px 30px;
+    border-radius: 0;
+    background: #e6007e;
+    color: #ffffff;
+    font-family: 'titilliumlight', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+.visit-link:hover {
+    color: #ffffff;
+    transition: all .1s ease-out;
+    background-color: #ff1499;
+}
+
+.img-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+[class^="item-img"] {
+    width: 32%;
+}
+
+@media (max-width: 1200px) {
+
+    .portfolio-info {
+        width: 100%;
+    }
+
+    .news {
+        display: none;
+    }
+}
+
+.img-info a div {
+    width: auto;
+    height: 250px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/24701-nature-natural-beauty.jpg/1280px-24701-nature-natural-beauty.jpg");
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+[class^="item-img"] .c-pink {
+    text-align: right;
+    cursor: pointer;
+}
+
+@media (max-width: 869px) {
+
+    .img-info a div {
+        height: 200px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .img-info a div {
+        height: 180px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .block-visit {
+        flex-direction: column;
+    }
+
+    .img-info {
+        flex-direction: column;
+    }
+
+    [class^="item-img"] {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+
+.news-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid slategray;
+}
+
+.news-title .news-head {
+    font-family: 'titilliumlight', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-size: 1.5em;
+    line-height: 100%;
+    color: #000000;
+}
+
+.news-title span {
+    font-size: 0.8em;
+    color: slategray;
+}
+
+.news-title i {
+    display: flex;
+    flex-direction: column;
+    color: slategray;
+}
+
+.news-item {
+    padding: 10px 10px 0 10px;
+    border-bottom: 1px solid slategray;
+
+}
+
+.news-item:hover {
+    background: #F5F8FA;
+    cursor: pointer;
+}
+
+.time-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.time-line span {
+    color: slategray;
+    font-size: 0.7em;
+}
+
+.time-line .fa-twitter {
+    color: slategray;
+    font-size: 0.8em;
+}
+
+.fa-arrows-spin {
+    color: mediumseagreen;
+    font-size: .8em;
+}
+
+.item-client {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.block-item-client-photo {
+    width: 45px;
+    height: 35px;
+}
+
+.block-item-client-photo img {
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+}
+
+.item-client-data {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7em;
+    color: slategray;
+    line-height: 150%;
+    margin-bottom: 10px;
+}
+
+.item-client-name {
+    color: #000000;
+}
+
+.item-client-name:hover {
+    color: blue;
+}
+
+.news-item p {
+    font-size: 0.7em;
+    color: slategray;
+    margin-bottom: 30px;
+}
+
+.photo-news {
+    background-image: url("https://pbs.twimg.com/media/FN9GvUbXsAA9Vhe?format=jpg&name=small");
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.icons-block {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: .7em;
+    color: slategray;
+    padding-bottom: 15px;
+}
+
+.icons {
+    width: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.icons-block .icons div {
+    margin-right: 25px;
+}
+
+.icons-block .fa-heart:hover {
+    transition-duration: .1s;
+    color: darkred;
+}
+
+.icons-block .fa-arrow-right-from-bracket:hover {
+    transition-duration: .1s;
+    color: lightblue;
+}
+
+
